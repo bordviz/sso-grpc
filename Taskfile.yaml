@@ -1,0 +1,9 @@
+version: "3"
+
+tasks:
+  clear_and_run:
+    description: "clear database and rin server"
+    cmds:
+      - go run cmd/migrations/main.go --action=down
+      - go run cmd/migrations/main.go --action=up
+      - go run cmd/sso/main.go

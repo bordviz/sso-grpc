@@ -1,0 +1,8 @@
+DROP INDEX IF EXISTS idx_admin_user_id;
+DROP TABLE IF EXISTS admin;
+
+DROP INDEX IF EXISTS idx_users_email;
+DROP TABLE IF EXISTS public.user;
+
+DROP INDEX IF EXISTS idx_app_id;
+DROP TABLE IF EXISTS app;
