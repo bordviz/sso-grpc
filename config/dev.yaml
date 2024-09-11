@@ -1,0 +1,20 @@
+env: dev #local, dev, prod
+
+token_expires: 1h
+refresh_token_expires: 168h
+migrations_path: ./migrations
+
+database:
+  host: db
+  port: 5432
+  user: auth-user
+  password: auth2121
+  name: SSO
+  timeout: 5s
+  delay: 5s
+  sslmode: disable
+  attempts: 5
+
+grpc:
+  port: 9090
+  timeout: 5s
